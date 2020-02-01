@@ -75,7 +75,8 @@ def display_factorial_planes(X_projected, n_comp, pca, axis_ranks, labels=None, 
             # affichage des labels des points
             if labels is not None:
                 for i,(x,y) in enumerate(X_projected[:,[d1,d2]]):
-                    plt.text(x, y, labels[i],
+                    print(i, x, y)
+                    plt.text(x, y, "ha",#labels[i],
                               fontsize='14', ha='center',va='center') 
                 
             # détermination des limites du graphique
